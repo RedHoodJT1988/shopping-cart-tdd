@@ -24,7 +24,7 @@ public class Cart {
         items.add(new LineItem(item, 1));
     }
 
-    public void addItem(Item item, int quantity) {
+    public void addItems(Item item, int quantity) {
         items.add(new LineItem(item, quantity));
     }
 

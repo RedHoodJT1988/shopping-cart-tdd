@@ -48,9 +48,19 @@ public class CartTest {
         cart.AddItem(item2);
         assertEquals(new ArrayList<String>(Arrays.asList("Gucci Blazer - $250.0", "Louis Vatton Sunglasses - $150.0")), cart.itemizedList());
     }
+
     // Given I have an empty cart, when I add items, then I expect itemizedList() reflect the items I have added
     // along with their price and quantity.
+    @Test
+    public void ShouldAllowMoreThanOneOfTheSameItemAddingToCart() {
+        Cart cart = new Cart();
 
+        Item item1 = new Item("Louis Vatton Handbag", 450.99);
+        Item item2 = new Item("Gucci Belt", 300.00);
+
+        cart.addItems(item1, 2);
+        assertEquals(901.98, cart.getTotalPrice());
+    }
     // Given I have an empty cart, when I add more than one of an item, then I expect getTotalPrice()
     // to reflect both the item price and quantity.
 

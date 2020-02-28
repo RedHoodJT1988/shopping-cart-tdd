@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="shopping.cart.cart.CartTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-28T16:38:56" hostname="DESKTOP-8J20CI4" time="0.028">
+<testsuite name="shopping.cart.cart.CartTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-28T16:43:03" hostname="DESKTOP-8J20CI4" time="0.029">
   <properties/>
-  <testcase name="DisplayItemiziedList()" classname="shopping.cart.cart.CartTest" time="0.028"/>
+  <testcase name="ShouldAllowMoreThanOneOfTheSameItemAddingToCart()" classname="shopping.cart.cart.CartTest" time="0.029"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
