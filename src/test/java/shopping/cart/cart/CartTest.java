@@ -58,12 +58,26 @@ public class CartTest {
         Item item1 = new Item("Louis Vatton Handbag", 450.99);
         Item item2 = new Item("Gucci Belt", 300.00);
 
-        cart.addItems(item1, 2);
+        cart.addItem(item1, 2);
         assertEquals(901.98, cart.getTotalPrice());
     }
     // Given I have an empty cart, when I add more than one of an item, then I expect getTotalPrice()
     // to reflect both the item price and quantity.
+    @Test
+    public void ShouldAllowViewingOfItemsInCart() {
+        Cart cart = new Cart();
 
+        Item handbag = new Item("Louis Vatton Handbag", 450.99);
+        Item belt = new Item("Gucci Belt", 300.00);
+
+        assertEquals(new ArrayList<String>(), cart.ItemQuantities());
+
+        cart.addItem(handbag, 2);
+        assertEquals(new ArrayList<String>(Arrays.asList("Louis Vatton Handbag - 2")), cart.ItemQuantities());
+
+        cart.addItem(belt, 4);
+        assertEquals(new ArrayList<String>(Arrays.asList("Louis Vatton Handbag - 2", "Gucci Belt - 4")), cart.ItemQuantities());
+    }
     // Given I have a cart with items that are not on sale, when I add items that are on sale, I expect
     // onSaleItems() to include only the items on sale.
 }
