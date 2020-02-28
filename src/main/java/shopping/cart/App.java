@@ -5,7 +5,7 @@ package shopping.cart;
 
 public class App {
     public String getGreeting() {
-        return "Hello world.";
+        return "Welcome to the Shopping Cart.";
     }
 
     public static void main(String[] args) {
