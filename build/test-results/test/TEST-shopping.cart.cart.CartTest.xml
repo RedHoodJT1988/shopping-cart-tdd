@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="shopping.cart.cart.CartTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-28T16:21:56" hostname="DESKTOP-8J20CI4" time="0.022">
+<testsuite name="shopping.cart.cart.CartTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-28T16:28:19" hostname="DESKTOP-8J20CI4" time="0.034">
   <properties/>
-  <testcase name="EmptyCart()" classname="shopping.cart.cart.CartTest" time="0.022"/>
+  <testcase name="AddItemsToCart()" classname="shopping.cart.cart.CartTest" time="0.034"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

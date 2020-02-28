@@ -18,4 +18,20 @@ public class CartTest {
         // Execute
         cart = new Cart();
     }
+
+    // Given that I have an empty cart, when I add an item, then I expect to getTotalPrice() reflect the sum
+    // of all the Items in my cart, times the quantites of each item
+    @Test
+    public void AddItemsToCart() {
+        Cart cart = new Cart();
+
+        Item item1 = new Item("Louis Vatton Handbag", 450.99);
+        Item item2 = new Item("Gucci Belt", 300.00);
+
+        cart.AddItem(item1);
+        assertEquals(450.99, cart.getTotalPrice());
+
+        cart.AddItem(item2);
+        assertEquals(750.99, cart.getTotalPrice());
+    }
 }
